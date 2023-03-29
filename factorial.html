@@ -6,6 +6,17 @@
     <body>
         <h1>factorial number program</h1>
         <input type="text" id="t" placeholder="enter any no">
-        <button>fact</button>
+        <p id="res"></p>
+        <button onclick="fact()">fact</button>
     </body>
 </html>
+<script>
+    function fact(){
+    var a=document.getElementById('t').value;
+    var result =1;
+    for(var i=a;i>0;i--){
+        result=result*i;
+    }
+    document.getElementById('res').innerHTML=result;
+}
+</script>
